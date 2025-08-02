@@ -1,0 +1,171 @@
+/* Reset default spacing */
+body {
+  margin: 0;
+  background-color: #92a8d1;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+}
+
+/* 🔹 Logo Button Styling */
+.btn-logo {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+}
+
+.btn-logo img {
+  width: 150px;
+  height: 150px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+  margin: 10px;
+}
+
+.btn-logo img:hover {
+  transform: scale(1.05);
+}
+
+/* 🔹 Navbar Link Hover */
+.nav-link {
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* 🔹 Auth Buttons Hover Effect */
+.btn-hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 193, 7, 0.3);
+}
+
+/* 🔹 Responsive Fixes */
+@media (max-width: 768px) {
+  .btn-logo {
+    position: static;
+    margin-bottom: 10px;
+  }
+
+  header .d-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    justify-content: flex-start !important;
+  }
+
+  .text-end {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+.search{
+ display: flex;
+ justify-content: center;
+ padding: 20px;
+ gap: 15px;
+ font-size: large;
+ font-weight: bolds;
+}
+
+.btn {
+  font-size: 18px;
+  background-color: #804396;      
+  color: #fff;                   
+  border: 2px solid #804396;      
+  border-radius: 40px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  font-weight: 600;
+  align-content: center;
+}
+.btn:hover {
+  background-color: #804396;      
+  border-color: #804396;
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.3);
+}
+
+h2{
+ cursor: pointer;
+  font-size: auto;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+text-decoration-line: underline;
+
+}
+
+h2:hover{
+  transition: ease-in-out;
+ transform: scale(1.03);
+}
+
+
+
+.text{
+  border-radius: 5px;
+  border: solid black;
+  font-family: sans-serif;
+  font-weight:normal;
+}
+
+.text:hover{
+  animation: forwards;
+
+}
+
+.masthead {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-img-overlay {
+  height: 100%;
+  position: relative;
+}
+
+.bg-img-overlay img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  filter: brightness(70%);
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+.z-1 {
+  z-index: 2;
+}
+
+.masthead{
+  padding: 40px;
+}
+
+.search{
+  padding: 30px;
+  gap: 30px;
+}
+
+.container-footer{
+  background-color: #92a8d1;
+}
